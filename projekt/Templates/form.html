@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>call-center project</title>
+		<meta charset="KOI8_R">
+		<link rel="stylesheet" type="text/css" href="..\static\styles\myform.css">
+		<link rel="shortcut icon" href="..\static\styles\icons.png" type="image/png">
+	</head>
+	<body>
+		<form class="contact_form" method = "POST" name="contact_form" action = "http://localhost:5000/">
+			<ul>
+				<li>
+					<label for="name">ФИО пользователя:</label>
+					<input type="text" name="name" placeholder="Иванов Иван Иванович" required  />
+					<span class="form_hint"></span>
+				</li>
+				<li>
+					<label for="message">Сообщение:</label>
+					<textarea name="message" cols="40" rows="6" ></textarea>
+				</li>
+				<li>
+					<button class="submit" type="submit">Отправить</button>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
